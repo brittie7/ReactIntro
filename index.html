@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="application-root"></div>
+
+  <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+  <script type="text/babel">
+
+    function App(props) {
+      console.log(props)
+      return (
+        <div>
+          {props.children}
+        </div>
+      );
+    }
+
+    // Nested elements inside the App
+    ReactDOM.render(
+      <App className='my-class'>
+        <div>
+          <h1>
+            <span>Sally Student</span>
+          </h1>
+
+        </div>
+        <section>
+          <h2>Contact Me</h2>
+          <address><p>123 Student Drive</p>
+            <p>Candy Land Lane</p>
+            <p>Hershey, Pennsylvania 18104</p>
+          </address>
+          <p> <a href="mailto:sally@gmail.com"> sally@gmail.com</a></p>
+          <p>(123) 456-7890</p>
+          <hr />
+          <img src="/Sally.jpg" width="150" />
+        </section>
+        <section>
+          <h3>Education</h3>
+          <h4>University of Debauchery, 2015 - 2017</h4>
+          <ul>
+            <li>MFA in Shenanigans</li></ul>
+          <h4>  Clown College, 2005-2009</h4>
+          <ul>
+            <li>BA in Chillaxing</li></ul>
+          <hr />
+        </section>
+        <section>
+          <h3>Employment History</h3>
+          <h4>Comedy Central</h4>
+          <ul>
+            <li>Position Held: Joke Architect</li>
+            <li>Dates of Employment: June 2018-Present</li>
+            <li>Description:"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</li>
+          </ul>
+          <h4>Saturday Night Live</h4>
+          <ul>
+            <li>Position Held: Joke Master</li>
+            <li>Dates of Employment: June 2010-July 2014</li>
+            <li>Description:"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</li>
+          </ul>
+          <hr />
+        </section>
+      </App>,
+      document.querySelector('#application-root')
+    );
+
+
+
+    /*<h1>Sally Student</h1>
+    <main>
+      <section>
+          <h2>Contact Me</h2>
+          <address><p>123 Student Drive</p>
+            <p>Candy Land Lane</p>
+            <p>Hershey, Pennsylvania 18104</p>
+            </address>
+            <p> <a href="mailto:sally@gmail.com"> sally@gmail.com</a></p>
+            <p>(123) 456-7890</p>
+            <hr/>
+      </section>
+          <section>
+            <h3>Education</h3>
+            <h4>University of Debauchery, 2015 - 2017</h4>
+              <ul>
+                <li>MFA in Shenanigans</li></ul>
+            <h4>  Clown College, 2005-2009</h4>
+              <ul>
+                <li>BA in Chillaxing</li></ul>
+              <hr/>
+          </section>
+          <section>
+            <h3>Employment History</h3>
+              <h4>Comedy Central</h4>
+                <ul>
+                  <li>Position Held: Joke Architect</li>
+                  <li>Dates of Employment: June 2018-Present</li>
+                  <li>Description:"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</li>
+                </ul>
+              <h4>Saturday Night Live</h4>
+                <ul>
+                  <li>Position Held: Joke Master</li>
+                  <li>Dates of Employment: June 2010-July 2014</li>
+                  <li>Description:"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</li>
+                </ul>
+                <hr/>
+          </section>
+          <section>
+            <h3>Work Products</h3>
+            <p>See an example of my work here:</p>
+            <p><video controls>
+            <source src="https://archive.org/download/122Eyes1950/122Eyes1950_512kb.mp4"
+            type="video/mp4"> <!--Couldn't find an clip from Broad City so using one from an earlier exercise-->
+            </video></p>
+            <hr/>
+          </section>
+          <section>
+            <h3> Languages</h3>
+              <h4>English</h4>
+                <ul>
+                  <li>Native Speaker, Full Fluency</li>
+                  <li>Nevertheless, I still shoot from the hip when it comes to grammar and punctuation</li>
+                  <li>Description:"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</li>
+                </ul>
+              <h4>French</h4>
+                <ul lang="fr">
+                  <li>Francais Courant</li>
+                  <li>Je me suis specialisée en francais à la fac</li>
+                  <li>J'adore Gad Elmaleh. Il est mon idole</li>
+                </ul>
+          </section>
+  </main>
+          </App>,
+          document.querySelector("#application-root")
+        ); */
+  </script>
+</body>
+
+</html>
